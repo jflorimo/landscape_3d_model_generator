@@ -6,6 +6,7 @@
 	<script src="utils.js"></script>
 	<script src="prismas.js"></script>
 	<script src="https://cdn.babylonjs.com/babylon.js"></script>
+	<script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
 	<style>
 	html, body {
 		overflow: hidden;
@@ -34,6 +35,7 @@
 
             // call the createScene function
             var scene = createScene(canvas, engine);
+            scene.debugLayer.show();
 
             // run the render loop
             engine.runRenderLoop(function(){
